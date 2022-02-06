@@ -67,11 +67,7 @@ public class Bookshelf {
     }
 
     public int countBooks() {
-        int count=0;
-        for (int i = 0; i < books.length; i++) {
-            count++;
-        }
-        return count;
+        return books.length;
     }
 
     @Override
