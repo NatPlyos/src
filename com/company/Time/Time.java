@@ -6,7 +6,7 @@ public class Time {
     private int hours;
 
     public Time(long totalSeconds) {
-        if (totalSeconds <= 0) {
+        if (totalSeconds < 0) {
             System.out.println("Input error. Seconds cannot be < 0");
         } else {
             this.hours = (int) (totalSeconds / (60 * 60));
@@ -16,7 +16,7 @@ public class Time {
     }
 
     public Time(int seconds, int minutes, int hours) {
-        if (seconds <= 0 || minutes <= 0 || hours <= 0) {
+        if (seconds < 0 || minutes < 0 || hours < 0) {
             System.out.println("Input error. Time cannot be < 0");
         } else {
             this.seconds = seconds;
