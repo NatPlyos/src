@@ -1,7 +1,7 @@
 package com.company.Books;
 
 public class Book {
-    protected boolean readByMe; // почему если делают private, поле становится не доступным в методе countReadBooks в классе Bookshelf??
+    protected boolean readByMe;
     protected String author;
     protected String name;
     protected int pagesAmount;
